@@ -2,6 +2,10 @@
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "sink",
   "main": "dist/server/index.mjs",
+  "observability": {
+    "enabled": true,
+    "head_sampling_rate": 100
+  },
   "assets": {
     "binding": "ASSETS",
     "directory": "dist/public"
@@ -24,7 +28,7 @@
   "kv_namespaces": [
     {
       "binding": "KV",
-      "id": "ef93d42dc4b34969bab404d2e80f8dd3" // IMPORTANT: Change this to your KV namespace ID
+      "id": "6b30feb644a542e49d203581ea0dd035" // IMPORTANT: Change this to your KV namespace ID
     }
   ]
 }
