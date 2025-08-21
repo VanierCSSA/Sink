@@ -3,8 +3,7 @@
   "name": "sink",
   "main": "dist/server/index.mjs",
   "observability": {
-    "enabled": true,
-    "head_sampling_rate": 1
+    "enabled": true
   },
   "assets": {
     "binding": "ASSETS",
